@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+}
+
+.container img {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}

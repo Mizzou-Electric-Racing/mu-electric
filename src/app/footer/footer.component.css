@@ -1,0 +1,59 @@
+
+
+.block {
+    display: inline-block;
+    height: 250px;
+    background-color: #FB1B;
+    width: 33%;
+}
+
+.footer-txt {
+    margin-top: 55px;
+}
+
+.footer-txt img {
+    width: 100px;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+}
+
+#middle {
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.bottom-container {
+    text-align: center;
+    background-color: black;
+    margin-top: -18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bottom-container #url {
+    color: white;
+    padding-top: 15px;
+    font-weight: 800;
+}
+
+.bottom-container #email {
+    color: #FB1B;
+    margin-top: -20px;
+}
+
+.bottom-container img {
+    width: 50px;
+}
+
+.bottom-container #copyright {
+    color: rgb(230, 229, 229);
+    padding-bottom: 10px;
+    margin-top: 7px;
+}
+
+.card-txt {
+    margin-top: -10px;
+}

@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgba(238, 176, 16, 0.805);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+    color: rgba(222, 167, 26, 0.805);
+}
+
+.active-link {
+    color: rgb(45, 45, 45);
+}
