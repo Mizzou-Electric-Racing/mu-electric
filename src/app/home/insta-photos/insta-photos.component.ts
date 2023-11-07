@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-insta-photos',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./insta-photos.component.css']
 })
 export class InstaPhotosComponent {
+
   
 }
+
+

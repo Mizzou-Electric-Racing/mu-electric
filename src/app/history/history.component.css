@@ -1,0 +1,75 @@
+.container { 
+    width: 100%;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container img{
+    width: 100%; 
+    height: 140vh; 
+    object-fit: cover; 
+    object-position: 50% 50%;
+}
+
+.hero-txt {
+    position: absolute;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 30vh;
+    left: 20%;
+    text-align: center;
+}
+
+.hero-txt h1 {
+    text-align: center;
+    color: #f1bd2f;
+    text-shadow: 2px 2px rgb(86, 86, 86);
+    font-size: 8vh;
+    margin-right: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero-txt p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vh;
+    margin: 0 6vh 6vh 6vh;
+    color: rgb(213, 213, 213);
+}
+
+
+.images img {
+    width: 50%;
+    margin: 0;
+    border: solid 0px #f1bd2f;
+    float: left;
+    height: 50vh;
+}
+
+/* mobile only styles when the device is 0-600px in maximum width */
+@media only screen 
+and (max-width: 1200px)
+ {
+    .container img {
+        height: 140vh
+    }
+
+    .hero-txt {
+        width: 100%;
+        left: 0;
+        height: 140vh;
+        top: 0;
+    }
+
+    .hero-txt p {
+        margin: 0 2vh 3vh 2vh;
+    }
+
+    .hero-txt h1 {
+        font-size: 6vh;
+        margin-top: 15vh;
+    }
+
+
+
+ }

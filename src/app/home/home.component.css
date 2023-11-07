@@ -1,0 +1,30 @@
+
+
+.images {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: #f4f4f4; /* adjust this value if you want to change the background color of the container */
+    overflow: hidden;
+    width: 100%; /* full width of parent */
+    height: 60vh; /* or whatever height you want */
+    margin-top: 50px;
+    background-color: #F1B82D;
+    padding: 3px 0 3px 0;
+}
+
+.images img {
+    width: 33.3%; /* adjusting for four images and a 1px border between each */
+    height: 100%; /* full height of the container */
+    object-fit: cover; /* this will crop the image to cover the area without distorting */
+    transition: 0.1s;
+    margin: 0;
+    border-right: solid 3px #F1B82D;
+}
+
+@media only screen and (max-width: 700px) {
+    .images {
+        height: 250px;
+    }
+
+}
