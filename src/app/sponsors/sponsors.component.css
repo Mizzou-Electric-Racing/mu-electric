@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(40, 40, 40);
+    margin-top: 17vh;
+}
+
+.card-container {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+
+.row {
+    margin: 0 -5px;
+    margin-top: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 5px 5px #b38b26; 
+    border: solid 2px white;
+    padding: 16px;
+    text-align: center;
+    background-color: #1c1c1c;
+    height: 350px;
+    margin-left: 2.2vh;
+    margin-right: 2.2vh;
+    color: rgb(180, 180, 180);
+    position: relative;
+}
+
+.first {
+    width: 300px;
+    float:left; 
+}
+
+.first img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.second {
+    overflow: hidden; 
+    text-align: left;
+    padding-left: 50px;
+}
+  
+#role {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 30px;
+}
+
+#name {
+    font-family: 'Oswald', sans-serif;
+    margin-top: -15px;
+}
+
+#url {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    bottom: 20px;
+    text-decoration: underline;
+    color:rgb(180, 180, 180);
+}
+
+.card-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about-container #title {
+    font-size: 50px;
+    padding-top: 40px;
+    font-weight: bolder;
+}
+
+.about-container h1 {
+    color: #F1B82D;
+}
+
+.about-container p{
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgb(168, 168, 168);
+}
+
+.about-container #about-txt {
+    text-decoration: none;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 22px;
+}
+
+
+
+
+
+  @media screen and (max-width: 1200px) {
+
+    .first img {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    #role {
+        margin-top: 0;
+    }
+
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .about-container #about-txt {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    .first {
+        float: left;
+        margin: auto;
+        width: 15vh;
+    }
+
+    .second {
+        text-align: left;
+        padding-left: 3vh;
+    }
+
+    .card {
+        height: 20.5vh;
+        width: 95%;
+        margin: auto;
+    }
+
+    #url {
+        position: relative;
+        margin-top: 20px;
+        font-family: 'Oswald', sans-serif;
+        bottom: 20px;
+        text-decoration: underline;
+        color:rgb(180, 180, 180);
+    }
+
+    #title {
+        margin-top: 150px;
+    }
+
+    #name {
+        font-size: 3vh;
+    }
+
+    .row {
+        margin-top: 0;
+    }
+  }

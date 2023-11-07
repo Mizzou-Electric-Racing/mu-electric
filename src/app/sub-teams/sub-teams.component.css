@@ -1,0 +1,7 @@
+app-sub-team-one {
+    display: block;
+    width: 100%;
+    background-color: rgb(18, 18, 18); /* Background color for the entire component */
+    padding: 50px 0; /* Padding to give space above and below */
+    margin-top: 20px;
+}

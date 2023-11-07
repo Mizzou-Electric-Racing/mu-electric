@@ -1,0 +1,82 @@
+/* ADD BORDER TO IMAGES */
+
+
+/* Styles for the "description" div in "sub-team-one" component */
+.desrciption {
+    display: flex;
+    justify-content: center; /* Horizontally center the child content */
+    align-items: center; /* Vertically center the child content */
+    height: 100%;
+    margin-top: 20vh;
+    background-color: rgb(25, 25, 25);;
+    padding: 10vh;
+}
+
+/* Styles for the inner "description-content" div */
+.description-content {
+    background-color: rgb(44, 44, 44); /* Background color for the inner content box */
+    padding: 40px; /* Space around the text */
+    max-width: 800px; /* Maximum width of the inner box */
+    text-align: center; /* Centering the text horizontally */
+    box-shadow: 5px 5px #ae8723;
+    border: solid 2px white;
+}
+
+/* Style for the h1 tag */
+.description-content h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 5vh; /* Font size for the heading */
+    font-family: 'Oswald', sans-serif;
+    color: #F1B82D;
+}
+
+/* Style for the paragraph */
+.description-content p {
+    font-size: 2.4vh; /* Font size for the paragraph */
+    line-height: 1.5; /* Space between the lines of the paragraph */
+    font-family: 'Oswald', sans-serif;
+    color: rgb(200, 200, 200);
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    width: 100%; /* full width of parent */
+    height: 500px; /* or whatever height you want */
+    margin-top: 50px;
+    background-color: #F1B82D;
+    padding: 2px 0 2px 0;
+}
+
+.images img {
+    width: 33%; /* adjusting for four images and a 1px border between each */
+    height: 100%; /* full height of the container */
+    object-fit: cover; /* this will crop the image to cover the area without distorting */
+    transition: 0.1s;
+    margin: 0;
+    border: solid 2px #F1B82D;
+}
+
+
+.images img:hover {
+    transform: scale(1.05); /* gives a slight zoom effect on hover */
+    transition: 0.2s;
+}
+
+#team-leader {
+    margin-top: 30px;
+}
+
+#team-leader h1 {
+    font-size: 3.7vh;
+}
+
+@media only screen 
+and (max-device-width: 1200px)
+ {
+    .images {
+        height: 30vh;
+    }
+ }
