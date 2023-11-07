@@ -1,0 +1,75 @@
+.comp-one-container {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 16vh;
+}
+
+td {
+  width: 40%;
+}
+
+p{
+    line-height: 2.6vh;
+    text-align: left;
+    font-size: 2vh;
+    width:80%;
+  }
+  h1{
+    text-align: left;
+    font-size:5vh;
+  }
+  h2{
+    text-align: left;
+  }
+  img{
+    height:400px;
+    object-fit: cover;
+    width:80%;
+  }
+
+  #left-title {
+    padding: 5%;
+  }
+
+@media only screen 
+and (max-width: 1200px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  .thead {
+    display: none; 
+  }
+  
+  td {
+    /* Make each cell look more like a standalone block or list item */
+    margin-bottom: 0.5rem;
+    padding-left: 50%; /* Give some space for content, adjust as needed */
+    width: 100%;
+    padding-left: 0;
+    padding: 0;
+  }
+
+  
+  td:before {
+    /* Add a pseudo-element to act as a label for the content */
+    content: attr(data-label); /* Assumes you have a data-label attribute in your td for labeling */
+    float: left;
+    font-weight: bold;
+  }
+
+  p, h1, h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #left-title {
+    padding: 2vh 0 5vh 0;
+  }
+
+  img{
+    height:200px;
+    object-fit: cover;
+    width:100%;
+  }
+  
+}
