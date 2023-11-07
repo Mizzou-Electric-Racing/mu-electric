@@ -10,6 +10,23 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './home/about/about.component';
 import { InstaPhotosComponent } from './home/insta-photos/insta-photos.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ContactComponent } from './home/contact/contact.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HistoryComponent } from './history/history.component';
+import { CompetitionComponent } from './competition/competition.component';
+import { TeamComponent } from './home/team/team.component';
+import { SubTeamsComponent } from './sub-teams/sub-teams.component';
+import { SubTeamOneComponent } from './sub-teams/sub-team-one/sub-team-one.component';
+import { CompOneComponent } from './competition/comp-one/comp-one.component';
+import { PhotoComponent } from './photo/photo.component';
+import { PhotogalleryComponent } from './photo-gallery/photo-gallery.component';
+import { PhotoDetailComponent } from './photo-detail/photo-detail.component';
+import { SubTeamTwoComponent } from './sub-teams/sub-team-two/sub-team-two.component';
+import { SubTeamThreeComponent } from './sub-teams/sub-team-three/sub-team-three.component';
+import { SubTeamFourComponent } from './sub-teams/sub-team-four/sub-team-four.component';
+import { SubTeamFiveComponent } from './sub-teams/sub-team-five/sub-team-five.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +37,27 @@ import { InstaPhotosComponent } from './home/insta-photos/insta-photos.component
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    InstaPhotosComponent
+    InstaPhotosComponent,
+    SponsorsComponent,
+    ContactComponent,
+    HistoryComponent,
+    CompetitionComponent,
+    PhotogalleryComponent,
+    TeamComponent,
+    SubTeamsComponent,
+    SubTeamOneComponent,
+    CompOneComponent,
+    PhotoComponent,
+    PhotoDetailComponent,
+    SubTeamTwoComponent,
+    SubTeamThreeComponent,
+    SubTeamFourComponent,
+    SubTeamFiveComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
