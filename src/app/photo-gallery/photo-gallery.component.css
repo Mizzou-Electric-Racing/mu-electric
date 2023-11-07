@@ -257,66 +257,7 @@ p{
   /*
   Grid 3's positions yay :)                  ///////////////////////////////////////////////////////////
    */
-  
-  .gallery3.HC{
-    width:200px;
-    height: 100px;
-  }
-  #GI31 {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-  
-  }
-  
-  #GI32 {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
-  }
-  
-  #GI33 {
-    grid-column: 1 / span 4;
-    grid-row: 3 / span 4;
-  }
-  
-  #GI34 {
-    grid-column: 5 / span 4;
-    grid-row: 1 / span 4;
-  
-  }
-  
-  #GI35 {
-    grid-column: 5 / span 3;
-    grid-row: 5 / span 2;
-  }
-  
-  #GI36 {
-    grid-column: 8 / span 1;
-    grid-row: 5 / span 2;
-  }
-  #GI37{
-    grid-column: 9 / span 3;
-    grid-row:1/ span 3;
-  }
-  #GI38{
-    grid-column: 9 / span 3;
-    grid-row: 4 / span 3;
-  }
-  #GI39{
-    grid-column: 12 / span 1;
-    grid-row:1/ span 2;
-  }
-  #GI310{
-    grid-column: 13 / span 3;
-    grid-row:1/ span 2;
-  }
-  #GI311{
-    grid-column: 12 / span 4;
-    grid-row:3/ span 4;
-  }
-  #GI312{
-    grid-column: 16/ span 3;
-    grid-row: 1 / span 6;
-  }
+
   
   
   

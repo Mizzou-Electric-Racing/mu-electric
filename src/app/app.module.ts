@@ -16,7 +16,6 @@ import { ContactComponent } from './home/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HistoryComponent } from './history/history.component';
 import { CompetitionComponent } from './competition/competition.component';
-import { TeamComponent } from './home/team/team.component';
 import { SubTeamsComponent } from './sub-teams/sub-teams.component';
 import { SubTeamOneComponent } from './sub-teams/sub-team-one/sub-team-one.component';
 import { CompOneComponent } from './competition/comp-one/comp-one.component';
@@ -43,7 +42,6 @@ import { SubTeamFiveComponent } from './sub-teams/sub-team-five/sub-team-five.co
     HistoryComponent,
     CompetitionComponent,
     PhotogalleryComponent,
-    TeamComponent,
     SubTeamsComponent,
     SubTeamOneComponent,
     CompOneComponent,
