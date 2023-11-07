@@ -1,0 +1,24 @@
+<div class="container">
+    <div id="back">
+        <div class="left">
+            <button type="button" (click)="goBack()" class="back" >
+                <img src="./assets/backArrow.jpg" alt="">
+            </button>
+            <button type="button" (click)="prevPhoto()" class="lftbtn">
+                <img src="./assets/leftArrow.jpg">
+            </button>
+        </div>
+        <div class="main">
+            <img src="{{photo?.path}}" >
+        </div>
+        <div class="right">
+            <button type="button" (click)="nextPhoto()" class="rgtbtn">
+                <img src="./assets/rightArrow.jpg">
+            </button>
+        </div>
+        <div class="text">
+            <h2>{{photo?.title}}</h2>
+            <p>{{photo?.description}}</p>
+        </div>
+    </div>
+</div>

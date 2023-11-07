@@ -1,0 +1,81 @@
+
+
+h2{
+    text-align: left;
+    font-size:2rem;
+    padding-top:500px;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    line-height: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+    top:50%;
+}
+button{
+    background-color: white;
+    border:none;
+
+}
+#back{
+    position: fixed;
+    left:0;
+    top:150px;
+    width: 100%;
+    height:100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10% auto 10% 30%;
+    grid-template-rows: 100%;
+    grid-gap:10px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.left{
+
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+.lftbtn{
+    position:fixed;
+    left:0px;
+    top:50%;
+    max-height:100%;
+    width: 10%;
+}
+.rgtbtn{
+  position: fixed;
+    left:60%;
+    top:50%;
+    width:10%;
+}
+.back{
+    position:fixed;
+    left:0px;
+    top:20%;
+    max-height:100%;
+    width: 10%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.text{
+  padding-right:10%;
+}

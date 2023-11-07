@@ -1,0 +1,8 @@
+<ul class="photos">
+    <li *ngFor="let photo of PHOTOS">
+      <button type="button">
+        <span class="badge">{{photo.id}}</span>
+        <span class="name">{{photo.path}}</span>
+      </button>
+    </li>
+  </ul>
