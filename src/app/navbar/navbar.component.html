@@ -1,11 +1,37 @@
-
-
-
 <div class="container">
-    <a routerLink="/" routerLinkActive="active-link">Home</a>
-    <a href="#" routerLinkActive="active-link">History</a>
-    <a href="#" routerLinkActive="active-link">Sub Teams</a>
-    <a href="#" routerLinkActive="active-link">Competition</a>
-    <a href="#" routerLinkActive="active-link">Sponsors</a>
-    <a href="#" routerLinkActive="active-link">Photo Gallery</a>
+    <div class="left">
+        <img src="../../assets/logos/darkModeLogo.png">
+    </div>
+    <div class="hamburger">
+        <div (click)="toggleMenu()">
+            <span *ngIf="!menuActive" class="material-symbols-outlined">menu</span></div>
+            <span (click)="closeMenu()" *ngIf="menuActive" class="material-symbols-outlined">close</span>
+    </div>
+    <div class="right" [class.active]="menuActive">
+        <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">Home</a>
+        <a routerLink="/history" routerLinkActive="active-link" (click)="closeMenu()">History</a>
+        <div class="dropdown">
+            <a routerLink="#" routerLinkActive="active-link">Subteams</a>
+            <div class="dropdown-content">
+                <a routerLink="/aerodynamics" routerLinkActive="active-link" (click)="closeMenu()">Aerodynamics</a>
+                <a routerLink="/brakes-controls" routerLinkActive="active-link" (click)="closeMenu()">Brakes & Controls</a>
+                <a routerLink="/electronics" routerLinkActive="active-link" (click)="closeMenu()">Electronics</a>
+                <a routerLink="/powertrain" routerLinkActive="active-link" (click)="closeMenu()">Powertrain</a>
+                <a routerLink="/vehicle-dynamics" routerLinkActive="active-link" (click)="closeMenu()">Vehicle Dynamics</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a routerLink="#" routerLinkActive="active-link">Competition</a>
+            <div class="dropdown-content">
+                <a routerLink="/competition" routerLinkActive="active-link" (click)="closeMenu()">Competition Overview</a>
+                <a routerLink="/june-2023" routerLinkActive="active-link" (click)="closeMenu()">June 2023</a>
+            </div>
+        </div>
+        <a routerLink="/sponsors" routerLinkActive="active-link" (click)="closeMenu()">Sponsors</a>
+        <a routerLink="/photo-gallery" routerLinkActive="active-link" (click)="closeMenu()">Photo Gallery</a>
+    </div>
 </div>
+
+
+
+
