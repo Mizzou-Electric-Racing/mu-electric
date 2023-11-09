@@ -2,7 +2,7 @@
 
 
 /* Styles for the "description" div in "sub-team-one" component */
-.desrciption {
+.description {
     display: flex;
     justify-content: center; /* Horizontally center the child content */
     align-items: center; /* Vertically center the child content */
@@ -74,9 +74,17 @@
 }
 
 @media only screen 
-and (max-device-width: 1200px)
+and (max-width: 600px)
  {
     .images {
         height: 30vh;
+    }
+
+    .description-content {
+        padding: 2vh;
+    }
+
+    .description {
+        padding: 5vh 2vh 5vh 2vh;
     }
  }
