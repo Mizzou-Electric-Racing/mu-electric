@@ -70,6 +70,10 @@ and (max-width: 1200px)
         margin-top: 15vh;
     }
 
+    .images img {
+        height: 30vh;
+    }
+
 
 
  }
