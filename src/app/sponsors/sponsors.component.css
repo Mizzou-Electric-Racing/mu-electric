@@ -8,20 +8,23 @@
 }
 
 .card-container {
-    padding-top: 2vh;
-    padding-bottom: 3vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-gap: 10px;
+    padding: 2vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .column {
-    float: left;
-    width: 50%;
+    /* float: left; Remove this line */
+    /* width: 50%; Remove this line */
     padding: 0 10px;
 }
 
 
 .row {
-    margin: 0 -5px;
-    margin-top: 30px;
+
 }
 
 .row:after {
@@ -41,6 +44,7 @@
     margin-right: 2.2vh;
     color: rgb(180, 180, 180);
     position: relative;
+    margin-top: 5vh;
 }
 
 .first {
@@ -107,8 +111,8 @@
 
 .about-container #about-txt {
     text-decoration: none;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 5vh;
+    margin-right: 5vw;
     font-size: 22px;
 }
 
@@ -116,63 +120,63 @@
 
 
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 670px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-gap: 20px; /* Space between cards */
+        padding: 2vh;
+    }
+
+    .card {
+        height: auto; /* Adjust height to be auto so it scales with the content */
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px; /* Add some space between cards */
+        text-align: center;
+    }
+
+    .first {
+        width: 100%;
+    }
 
     .first img {
-        width: 15vh;
-        height: 15vh;
+        width: 95%; /* Make image take full width of the card */
+        height: auto; /* Adjust height to maintain aspect ratio */
+        border-radius: 10px;
+        margin: 0 2.5% 0 2.5%;
     }
 
-    #role {
-        margin-top: 0;
+    .second {
+        padding: 10px; /* Adjust padding as needed */
+        text-align: center;
     }
 
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+    #name, #role, #url {
+        font-size: 5vw; /* Use viewport width for font sizing to scale with the screen */
     }
 
     .about-container #about-txt {
         margin-left: 5vh;
         margin-right: 5vh;
-    }
-
-    .first {
-        float: left;
-        margin: auto;
-        width: 15vh;
-    }
-
-    .second {
-        text-align: left;
-        padding-left: 3vh;
-    }
-
-    .card {
-        height: 20.5vh;
-        width: 95%;
-        margin: auto;
-    }
-
-    #url {
-        position: relative;
-        margin-top: 20px;
-        font-family: 'Oswald', sans-serif;
-        bottom: 20px;
-        text-decoration: underline;
-        color:rgb(180, 180, 180);
+        font-size: 4vw; /* Adjust font size to be responsive */
     }
 
     #title {
-        margin-top: 150px;
+        margin-top: 10vh; /* Adjust the top margin for the title */
+        font-size: 6vw; /* Make the title responsive */
     }
 
-    #name {
-        font-size: 3vh;
+    #url {
+        position: relative; /* Keep it relative */
+        bottom: 0;
     }
 
-    .row {
-        margin-top: 0;
+    /* Remove floats and fixed heights as they are not necessary with grid */
+    .first, .second {
+        float: none;
+        height: auto;
     }
-  }
+
+    /* If you have any other specific styles that need adjustment, add them here */
+}

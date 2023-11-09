@@ -50,6 +50,7 @@ p {
 
 span {
     color: #ab8628;
+    font-size: 2vh;
 }
 
 #email-txt {
@@ -79,7 +80,7 @@ span {
 .bottom-container {
     text-align: center;
     background-color: rgb(20, 20, 20);
-    margin-top: -0.8vh;
+    margin-top: -2vh;
     font-family: 'Oswald', sans-serif;
 }
 

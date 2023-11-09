@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { routeTransitionAnimations } from './route-transition-animations';
 
 @Component({
@@ -10,6 +10,14 @@ import { routeTransitionAnimations } from './route-transition-animations';
 })
 export class AppComponent {
   title = 'eco-racing';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    })
+  }
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && 
