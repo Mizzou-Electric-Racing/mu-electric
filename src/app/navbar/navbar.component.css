@@ -6,7 +6,6 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     height: 14vh;
     transition: 0.5s;
 }
