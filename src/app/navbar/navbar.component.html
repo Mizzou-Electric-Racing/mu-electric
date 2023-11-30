@@ -1,6 +1,6 @@
 <div class="container">
     <div class="left">
-        <img src="../../assets/logos/darkModeLogo.png">
+        <img (click)="goToHome()" src="../../assets/logos/darkModeLogo.png">
     </div>
     <div class="hamburger">
         <div (click)="toggleMenu()">
@@ -11,7 +11,7 @@
         <a routerLink="/home" routerLinkActive="active-link" (click)="closeMenu()">Home</a>
         <a routerLink="/history" routerLinkActive="active-link" (click)="closeMenu()">History</a>
         <div class="dropdown">
-            <a routerLink="#" routerLinkActive="active-link">Subteams</a>
+            <a routerLink="/aerodynamics" routerLinkActive="active-link">Subteams</a>
             <div class="dropdown-content">
                 <a routerLink="/aerodynamics" routerLinkActive="active-link" (click)="closeMenu()">Aerodynamics</a>
                 <a routerLink="/brakes-controls" routerLinkActive="active-link" (click)="closeMenu()">Brakes & Controls</a>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <a routerLink="#" routerLinkActive="active-link">Competition</a>
+            <a routerLink="/competition" routerLinkActive="active-link">Competition</a>
             <div class="dropdown-content">
                 <a routerLink="/competition" routerLinkActive="active-link" (click)="closeMenu()">Competition Overview</a>
                 <a routerLink="/june-2023" routerLinkActive="active-link" (click)="closeMenu()">June 2023</a>

@@ -1,0 +1,41 @@
+.container { 
+    width: 100%;
+    position: relative;
+}
+
+.hero-txt {
+    position: absolute;
+    bottom: 1vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: solid 0.5vh #F1B82D;
+}
+
+.hero-txt h1 {
+    text-align: center;
+    font-size: 7vh;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 35vw;
+}
+
+#yellow {
+    color: #F1B82D;
+    text-shadow: 3px 3px black;
+}
+
+#transCar {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    bottom: -5vh;
+    left: 0;
+}
+
+#black {
+    color: white;
+    text-shadow: 3px 3px black;
+}

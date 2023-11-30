@@ -6,7 +6,6 @@
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
     height: 14vh;
     transition: 0.5s;
 }
@@ -39,7 +38,11 @@
 }
 
 .container img {
-    width: 25vw;
+    width: 45vh;
+}
+
+.container img:hover {
+    cursor: pointer;
 }
 
 .container a:hover {
@@ -80,7 +83,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: 10vh;
-    left: -7vh;
+    left: -6vh;
     margin: 0;
     padding: 0;
 }
@@ -108,7 +111,7 @@
 
 
 /* Mobile styles */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
         float: right;

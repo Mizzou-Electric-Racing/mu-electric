@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CalendarComponent } from './calendar/calendar.component';
 import { CompOneComponent } from './competition/comp-one/comp-one.component';
 import { CompetitionComponent } from './competition/competition.component';
 import { HistoryComponent } from './history/history.component';
@@ -18,15 +19,15 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, data: { animationState: 'One' } },
   { path: 'sponsors', component: SponsorsComponent, data: { animationState: 'Two' } },
-  { path: 'history', component: HistoryComponent, data: { animationState: 'Three' } },
-  { path: 'competition', component: CompetitionComponent, data: { animationState: 'Four' } },
-  { path: 'june-2023', component: CompOneComponent, data: { animationState: 'Four' } },
-  { path: 'photo-gallery', component: PhotogalleryComponent, data: { animationState: 'Five' }},
-  { path: 'aerodynamics', component: SubTeamOneComponent, data: { animationState: 'Six' },},
-  { path: 'brakes-controls', component: SubTeamTwoComponent, data: { animationState: 'Six' },},
-  { path: 'electronics', component: SubTeamThreeComponent, data: { animationState: 'Six' },},
-  { path: 'powertrain', component: SubTeamFourComponent, data: { animationState: 'Six' },},
-  { path: 'vehicle-dynamics', component: SubTeamFiveComponent, data: { animationState: 'Six' },},
+  { path: 'history', component: HistoryComponent, data: { animationState: 'One' } },
+  { path: 'competition', component: CompetitionComponent, data: { animationState: 'Two' } },
+  { path: 'june-2023', component: CompOneComponent, data: { animationState: 'One' } },
+  { path: 'photo-gallery', component: PhotogalleryComponent, data: { animationState: 'Two' }},
+  { path: 'aerodynamics', component: SubTeamOneComponent, data: { animationState: 'One' },},
+  { path: 'brakes-controls', component: SubTeamTwoComponent, data: { animationState: 'Two' },},
+  { path: 'electronics', component: SubTeamThreeComponent, data: { animationState: 'One' },},
+  { path: 'powertrain', component: SubTeamFourComponent, data: { animationState: 'Two' },},
+  { path: 'vehicle-dynamics', component: SubTeamFiveComponent, data: { animationState: 'One' },},
   {path:'photo-gallery/:car/:id',component:PhotoDetailComponent}
 ];
 

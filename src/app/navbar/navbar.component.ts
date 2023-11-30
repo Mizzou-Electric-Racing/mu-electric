@@ -26,4 +26,8 @@ export class NavbarComponent implements AfterViewInit {
   closeMenu() {
     this.menuActive = false;
   }
+
+  goToHome() {
+    window.location.href = "/";
+  }
 }

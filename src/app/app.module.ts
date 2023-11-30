@@ -26,6 +26,8 @@ import { SubTeamTwoComponent } from './sub-teams/sub-team-two/sub-team-two.compo
 import { SubTeamThreeComponent } from './sub-teams/sub-team-three/sub-team-three.component';
 import { SubTeamFourComponent } from './sub-teams/sub-team-four/sub-team-four.component';
 import { SubTeamFiveComponent } from './sub-teams/sub-team-five/sub-team-five.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,8 @@ import { SubTeamFiveComponent } from './sub-teams/sub-team-five/sub-team-five.co
     SubTeamThreeComponent,
     SubTeamFourComponent,
     SubTeamFiveComponent,
+    BottomBarComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
