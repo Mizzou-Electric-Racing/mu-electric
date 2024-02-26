@@ -16,21 +16,17 @@
     margin-bottom: 30px;
 }
 
+.small-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 20%));
+    grid-gap: 0px;
+    padding: 2vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .column {
-    /* float: left; Remove this line */
-    /* width: 50%; Remove this line */
     padding: 0 10px;
-}
-
-
-.row {
-
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .card {
@@ -47,9 +43,35 @@
     margin-top: 5vh;
 }
 
+.card-small {
+    box-shadow: 5px 5px #b38b26; 
+    border: solid 2px white;
+    padding: 16px;
+    text-align: center;
+    background-color: #1c1c1c;
+    height: 280px;
+    margin-left: 2.2vh;
+    margin-right: 2.2vh;
+    color: rgb(180, 180, 180);
+    position: relative;
+    margin-top: 5vh;
+}
+
 .first {
     width: 300px;
     float:left; 
+}
+
+.first-small {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.first-small img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .first img {
@@ -64,6 +86,11 @@
     text-align: left;
     padding-left: 50px;
 }
+
+.second-small {
+    overflow: hidden;
+    text-align: center;
+}
   
 #role {
     font-family: 'Oswald', sans-serif;
@@ -73,6 +100,11 @@
 #name {
     font-family: 'Oswald', sans-serif;
     margin-top: -15px;
+}
+
+#name-small {
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #url {
@@ -128,6 +160,11 @@
         padding: 2vh;
     }
 
+    .card-small {
+        height: auto;
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+
     .card {
         height: auto; /* Adjust height to be auto so it scales with the content */
         width: 95%;
@@ -178,5 +215,28 @@
         height: auto;
     }
 
-    /* If you have any other specific styles that need adjustment, add them here */
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .small-card-container {
+        grid-template-columns: repeat(auto-fit, 25%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .small-card-container {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .small-card-container {
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
+
+    .first-small img{
+        width: 100px;
+        height: 100px;
+    }
 }
