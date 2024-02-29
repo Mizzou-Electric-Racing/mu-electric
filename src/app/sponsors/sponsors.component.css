@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 485px) {
     .small-card-container {
-        grid-template-columns: repeat(auto-fit, 100%);
+        grid-template-columns: repeat(auto-fit, 50%);
     }
 
     .first-small img{
