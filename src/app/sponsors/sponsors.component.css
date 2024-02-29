@@ -49,8 +49,8 @@
     flex: 0 0 180px;
     background-color: #1c1c1c;
     height: 200px;
-    margin-left: 2.2vh;
-    margin-right: 2.2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
     color: rgb(180, 180, 180);
     margin-top: 5vh;
 }
@@ -105,7 +105,7 @@
 #url {
     position: absolute;
     font-family: 'Oswald', sans-serif;
-    bottom: 20px;
+    bottom: 30px;
     text-decoration: underline;
     color:rgb(180, 180, 180);
 }
@@ -155,10 +155,6 @@
         padding: 2vh;
     }
 
-    .card-small {
-        height: auto;
-        grid-template-columns: repeat(auto-fit, 50%);
-    }
 
     .card {
         height: auto; /* Adjust height to be auto so it scales with the content */
@@ -214,20 +210,20 @@
 }
 
 @media screen and (max-width: 1150px) {
-    .small-card-container {
-        grid-template-columns: repeat(auto-fit, 25%);
+    .card-small {
+        flex: 0 0 180px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .small-card-container {
-        grid-template-columns: repeat(auto-fit, 50%);
+    .card-small {
+        flex: 0 0 180px;
     }
 }
 
 @media screen and (max-width: 485px) {
-    .small-card-container {
-        grid-template-columns: repeat(auto-fit, 50%);
+    .card-small {
+        flex: 0 0 180px;
     }
 
     .first-small img{
