@@ -118,6 +118,7 @@
 .about-container {
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    margin: 0px 100px 0 100px;
 }
 
 .about-container #title {
@@ -138,8 +139,8 @@
 
 .about-container #about-txt {
     text-decoration: none;
-    margin-left: 5vh;
-    margin-right: 5vw;
+    margin-left: 15vh;
+    margin-right: 15vh;
     font-size: 22px;
 }
 
