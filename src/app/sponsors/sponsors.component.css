@@ -8,29 +8,28 @@
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2vh;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .small-card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14.2%, 14.2%));
-    grid-gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2vh;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-.column {
+    width: 100%;
 }
 
 .card {
     box-shadow: 5px 5px #b38b26; 
     border: solid 2px white;
+    flex: 0 0 650px;
     padding: 16px;
     text-align: center;
     background-color: #1c1c1c;
@@ -40,7 +39,6 @@
     color: rgb(180, 180, 180);
     position: relative;
     margin-top: 5vh;
-    grid-column: span 1; /* Ensures each card takes up only one column space */
 }
 
 .card-small {
@@ -48,12 +46,12 @@
     border: solid 2px white;
     padding: 16px;
     text-align: center;
+    flex: 0 0 180px;
     background-color: #1c1c1c;
     height: 200px;
     margin-left: 2.2vh;
     margin-right: 2.2vh;
     color: rgb(180, 180, 180);
-    position: relative;
     margin-top: 5vh;
 }
 
@@ -62,10 +60,6 @@
     float:left; 
 }
 
-.first-small {
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
 
 .first-small img{
     width: 100px;
