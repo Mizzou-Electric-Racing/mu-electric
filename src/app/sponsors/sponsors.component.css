@@ -9,7 +9,7 @@
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 10px;
     padding: 2vh;
     margin-top: 30px;
@@ -18,7 +18,7 @@
 
 .small-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 20%));
+    grid-template-columns: repeat(auto-fit, minmax(14.2%, 14.2%));
     grid-gap: 0px;
     padding: 2vh;
     margin-top: 30px;
@@ -26,7 +26,6 @@
 }
 
 .column {
-    padding: 0 10px;
 }
 
 .card {
@@ -41,6 +40,7 @@
     color: rgb(180, 180, 180);
     position: relative;
     margin-top: 5vh;
+    grid-column: span 1; /* Ensures each card takes up only one column space */
 }
 
 .card-small {
@@ -49,7 +49,7 @@
     padding: 16px;
     text-align: center;
     background-color: #1c1c1c;
-    height: 280px;
+    height: 200px;
     margin-left: 2.2vh;
     margin-right: 2.2vh;
     color: rgb(180, 180, 180);
@@ -68,8 +68,8 @@
 }
 
 .first-small img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -105,6 +105,7 @@
 #name-small {
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
 
 #url {
@@ -240,3 +241,5 @@
         height: 100px;
     }
 }
+
+/* 1150 */
